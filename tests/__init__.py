@@ -1,0 +1,1 @@
+"""Pxshot SDK tests."""
