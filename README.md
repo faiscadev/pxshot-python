@@ -94,6 +94,9 @@ with Pxshot('px_your_api_key') as client:
         wait_until='networkidle',    # 'load', 'domcontentloaded', 'networkidle'
         wait_for_selector='.content', # Wait for element
         wait_for_timeout=5000,        # Additional wait (ms)
+        
+        # Performance
+        block_ads=True,          # Block ads and trackers
     )
 ```
 

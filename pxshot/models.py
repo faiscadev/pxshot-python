@@ -47,6 +47,9 @@ class ScreenshotRequest(BaseModel):
     store: Optional[bool] = Field(
         None, description="Store screenshot and return URL instead of bytes"
     )
+    block_ads: Optional[bool] = Field(
+        None, description="Block ads and trackers"
+    )
 
     model_config = ConfigDict(use_enum_values=True)
 
